@@ -6,11 +6,11 @@ title:  Team
 # {{ page.title }}
 
 
-## USER 1
+## Noe Panero-Ren
 ***UCI Net ID***: npaneror
 
-## USER 2
+## Connor Woodson
 ***UCI Net ID***: woodsonc
 
-## USER 3
+## Richmond Horikawa
 ***UCI Net ID***: rhorikaw

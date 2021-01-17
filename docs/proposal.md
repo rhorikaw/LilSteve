@@ -20,3 +20,5 @@ title: Proposal
 
 
 
+## Appointment with the Instructor
+Our appointment will be on Wednesday, January 20 at 4:30 PM.

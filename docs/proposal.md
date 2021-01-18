@@ -3,10 +3,7 @@ layout: default
 title: Proposal
 ---
 ## Summary of the Project
-
-
-
-
+The main idea of this project is to take a song that is chosen by a user and then form a representation of that song in Minecraft using music note blocks and pressure plates. The input is an audio file of a song that falls within our time limits of around 5 minutes. Our output is the Minecraft stage that contains the music blocks and the agent that will activate them in the correct order corresponding to the inputted link. A possible application of our project is a song recognition app for a smartphone.
 
 ## AI/ML Algorithms
 For our project, we plan on using recurrent neural networks in order to generate the music blocks that will create the desired audio in minecraft. Recently, recurrent neural networks have become immensely popular in the field of machine learning due to their effectiveness in modeling sequence-to-sequence learning. This means that recurrent neural networks are very useful in areas such as speech recognition, translation, and speech synthesis, which all have to do with audio generation. This is due to the fact that recurrent neural networks use sequential data, which allows them to exhibit temporal dynamic behavior in order to solve temporal problems. Therefore, we believe that the task of translating from music in the real world to note blocks in Minecraft would be best solved using recurrent neural networks.

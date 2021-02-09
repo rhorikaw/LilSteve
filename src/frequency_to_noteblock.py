@@ -13,7 +13,7 @@ class TranslationError(Exception):
 
 
 def translate_to_noteblock_number(freq_dict) -> dict:
-    '''Takes frequencies and translates to noteblock numbers'''
+    '''Takes frequencies and translates to noteblock strings'''
     BLOCK_TRANSLATION = {
         184.997: "F_sharp_3",
         195.998: "G3",
@@ -41,6 +41,7 @@ def translate_to_noteblock_number(freq_dict) -> dict:
         698.455: "F5",
         739.988: "F_sharp_5"
     }
+
     noteblock_dict = defaultdict(str)
     for time, freq in freq_dict.items():
         if freq not in BLOCK_TRANSLATION:

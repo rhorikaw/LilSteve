@@ -60,7 +60,7 @@ else:
 # More interesting generator string: "3;7,44*49,73,35:1,159:4,95:13,35:13,159:11,95:10,159:14,159:6,35:6,95:6;12;"
 
 import csv
-c = open('Scales.csv','r')
+c = open('songs/Scales.csv','r')
 o = csv.reader(c)
 i = 0
 frequencies = []

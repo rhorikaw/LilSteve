@@ -7,6 +7,8 @@ For this project, we wish to create a program that takes a song chosen by the us
 
 ## Approach
 ![1](https://user-images.githubusercontent.com/28813330/107708419-4dad2400-6c78-11eb-8acc-c2a6fd013959.JPG)
+![2](https://user-images.githubusercontent.com/28813330/107708507-76351e00-6c78-11eb-9590-dc8144d0cb64.JPG)
+![5](https://user-images.githubusercontent.com/28813330/107708503-759c8780-6c78-11eb-9ead-f4636bb208b5.JPG) 
 In this project, we first began by procesing our input so that we
 wouild have the data available that we required for training.  Our
 original input was an audio file that we generated using a desktop
@@ -22,7 +24,8 @@ in the input file. From this file, we then can determine how long each
 note of the song is being played, and using each frequency value we
 can map each note to a specific pitch that can be represented in
 Minecraft.
-
+![3](https://user-images.githubusercontent.com/28813330/107708509-76351e00-6c78-11eb-93e2-6c61336eef70.JPG)
+![4](https://user-images.githubusercontent.com/28813330/107708501-7503f100-6c78-11eb-88f5-9208ce9af28c.JPG)
 The machine learning model that we are using to approach our scenario
 is a classifier specifically we are using a random forest algorithm in
 order to classify our data. Once we have determined the basic notes

@@ -89,7 +89,7 @@ def translate_to_noteblock_number(freq_dict) -> dict:
         noteblock_dict[time] = BLOCK_TRANSLATION[freq]
     return noteblock_dict
 
-data = open('Scales.csv','r')
+data = open('songs/Scales.csv','r')
 data_reader = csv.reader(data)
 line_num = 0
 frequencies = []
@@ -200,7 +200,7 @@ missionXML = '''<?xml version="1.0" encoding="UTF-8" ?>
             <ServerHandlers>
                 <FlatWorldGenerator generatorString="3;7,2;1;" />
                 <DrawingDecorator>''' + initNoteblocks(pitches[:2]) + addNoteblocks(pitches[2:4],4) + '''</DrawingDecorator>
-                <ServerQuitFromTimeUp timeLimitMs="100" />
+                <ServerQuitFromTimeUp timeLimitMs="1000000" />
                 <ServerQuitWhenAnyAgentFinishes />
             </ServerHandlers>
         </ServerSection>

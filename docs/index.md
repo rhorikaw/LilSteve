@@ -10,4 +10,8 @@ The main idea of this project is to take a song that is chosen by a user and the
 ## Refrence Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zTCfTtg5res" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Source code: https://github.com/rhorikaw/LilSteve
+## Weekly Meeting Time
+Wednesdays @4PM on Discord
+
+## Source Code
+https://github.com/rhorikaw/LilSteve

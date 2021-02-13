@@ -27,7 +27,6 @@ in the input file. From this file, we then can determine how long each
 note of the song is being played, and using each frequency value we
 can map each note to a specific pitch that can be represented in
 Minecraft.
-![3](https://user-images.githubusercontent.com/28813330/107708509-76351e00-6c78-11eb-93e2-6c61336eef70.JPG)
 ![4](https://user-images.githubusercontent.com/28813330/107708501-7503f100-6c78-11eb-88f5-9208ce9af28c.JPG)
 The machine learning model that we are using to approach our scenario
 is a classifier specifically we are using a random forest algorithm in

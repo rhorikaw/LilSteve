@@ -11,6 +11,9 @@ Reports:
 - [Status](status.html)
 - [Final](final.html)
 
+## Summary of the Project
+The main idea of this project is to take a song that is chosen by a user and then form a representation of that song in Minecraft using music note blocks and pressure plates. The input is an audio file of a song that falls within our time limits of around 5 minutes. Our output is the Minecraft stage that contains the music blocks and the agent that will activate them in the correct order corresponding to the inputted link. A possible application of our project is a song recognition app for a smartphone.
+
 What's Markdown (`.md`)?
 
 Markdown is markup that lets you write hypertext (HTML) documents

@@ -11,9 +11,9 @@ For this project, we wish to create a program that takes a song chosen by the us
 ## Approach
 In this project, we first began by procesing our input so that we
 wouild have the data available that we required for training.  Our
-original input was an audio file that we generated using a desktop
-instrument player that we were then able to convert  into a readable
-csv file that could be used as input for our program. Each line of the
+original input was an audio file that we generated using a Digital Audio Workstation
+called Ableton Live Lite 10. We were then able to convert that audio file via AnthemScore
+into a readable csv file that could be used as input for our program. Each line of the
 csv file corrresponds to the frequency of the audo recorded every one
 hundreth of a second. From the csv file, we know which frequencies are
 being heard at each specific moment in time and the amount of time
@@ -27,7 +27,6 @@ Minecraft.
 ![1](https://user-images.githubusercontent.com/28813330/107708419-4dad2400-6c78-11eb-8acc-c2a6fd013959.JPG)
 ![2](https://user-images.githubusercontent.com/28813330/107708507-76351e00-6c78-11eb-9590-dc8144d0cb64.JPG)
 ![5](https://user-images.githubusercontent.com/28813330/107708503-759c8780-6c78-11eb-9ead-f4636bb208b5.JPG) 
-![4](https://user-images.githubusercontent.com/28813330/107708501-7503f100-6c78-11eb-88f5-9208ce9af28c.JPG)
 The machine learning model that we are using to approach our scenario
 is a classifier specifically we are using a random forest algorithm in
 order to classify our data. Once we have determined the basic notes
@@ -43,8 +42,10 @@ that we are using is sklearn.ensemble.RandomForestClassifier.
 
 ## Evaluation
 Evaluating our project is not exactly simple, as we rely on our ears to make sure that the notes are being played correctly. One downside of this project is that when we convert a song to a minecraft noteblock circuit, the BPM (beats per minute) of the song will most likely change. This is because there is no way for the Malmo XML file to modify the number of ticks on a redstone repeater, and noteblock circuits with unticked repeaters only allow a BPM value of 150. Thus, rather than to record the audio file and compare that with the original file, the best that we could do to evaluate our code was to make sure the noteblock circuit plays the correct note at the correct time.\
-\
-The instrument and note conversions that are code made were almost 100% accurate. We noticed that for the C5 note being played in the first scale, our code interprets that as a C4 instead. This was because we approximated the note being played as the sound with the loudest amplitude, and we did not account for any other noise that may have come from the audio file. However, this was our prototype, and we hope to get rid of the problem as we will adopt a more holistic approach in evaluating the audio file when we introduce more instruments to the mix. Minus this, our code successfully translated the two scales correctly and with the right rhythm for one instrument.
+
+![4](https://user-images.githubusercontent.com/28813330/107708501-7503f100-6c78-11eb-88f5-9208ce9af28c.JPG)
+
+The note block circuit that we generate has each note block represent a sixteenth note, and our scale input only consisted of quarter notes. Since a quarter note has the same length of four sixteenth notes, we made sure that each note (note block) was followed by 3 silent notes (stone block). In our implementation, our code successfully translated the scale to a note block circuit, as all 64 notes were played the correctly at the correct time. We did not test out different rhythms, but in theory it should work if the fastest note in the audio file is at most a sixteenth note.
 
 ## Remaining Goals and Challenges
 Our implementation serves as a proof of concept that we could indeed convert information gained by a musical audio clip to a noteblock circuit. The main challenge of our project lies in the problem of determining which instruments are being played and when. Up to this point we have only tried to do this with one instrument type. Thus, our main focus now is to ensure that our Random Forest Classifier would correctly determine which instruments are being played.\

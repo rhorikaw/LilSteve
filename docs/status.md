@@ -9,9 +9,6 @@ title: Status
 For this project, we wish to create a program that takes a song chosen by the user and constructs a Minecraft note block circuit that reproduces the song. The input to the system is an audio file which is less than five minutes. Our output is a Minecraft circuit complete with redstone, repeaters, and note blocks that when activated, produces the input audio in Minecraft. To make our output sound more like the input, we will also be using different Minecraft blocks underneath the note blocks, which changes the type of sound the note block produces by changing the instrument that is played. A possible application of our project is a song recognition app for a smartphone.
 
 ## Approach
-![1](https://user-images.githubusercontent.com/28813330/107708419-4dad2400-6c78-11eb-8acc-c2a6fd013959.JPG)
-![2](https://user-images.githubusercontent.com/28813330/107708507-76351e00-6c78-11eb-9590-dc8144d0cb64.JPG)
-![5](https://user-images.githubusercontent.com/28813330/107708503-759c8780-6c78-11eb-9ead-f4636bb208b5.JPG) 
 In this project, we first began by procesing our input so that we
 wouild have the data available that we required for training.  Our
 original input was an audio file that we generated using a desktop
@@ -27,6 +24,9 @@ in the input file. From this file, we then can determine how long each
 note of the song is being played, and using each frequency value we
 can map each note to a specific pitch that can be represented in
 Minecraft.
+![1](https://user-images.githubusercontent.com/28813330/107708419-4dad2400-6c78-11eb-8acc-c2a6fd013959.JPG)
+![2](https://user-images.githubusercontent.com/28813330/107708507-76351e00-6c78-11eb-9590-dc8144d0cb64.JPG)
+![5](https://user-images.githubusercontent.com/28813330/107708503-759c8780-6c78-11eb-9ead-f4636bb208b5.JPG) 
 ![4](https://user-images.githubusercontent.com/28813330/107708501-7503f100-6c78-11eb-88f5-9208ce9af28c.JPG)
 The machine learning model that we are using to approach our scenario
 is a classifier specifically we are using a random forest algorithm in

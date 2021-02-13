@@ -74,7 +74,7 @@ def translate_to_noteblock_number(freq_dict) -> dict:
         439.999: "A4",
         466.163: "A_sharp_4",
         493.883: "B4",
-        523.25: "C4",
+        523.25: "C5",
         554.365: "C_sharp_5",
         587.329: "D5",
         622.253: "D_sharp_5",

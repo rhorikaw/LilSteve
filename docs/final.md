@@ -22,7 +22,7 @@ One of the first tasks that we had to accomplish was to be able to detect when e
 (Amplitude Graph)
 
 To generate data for this project, we sent in an audio file into AnthemScore, which is a software that uses neural networks to generate spectrograms, sheet music, and other interesting types of data. We mainly focused on the spectrograms and the xml files in our project to give us a better understanding of what kind of sounds are occurring at what point in the audio file. After retrieving the spectrogram data, we parsed the data so that we only have data for the intervals we are interested in. We did this by using a simple formula:
-    Seconds per 16th note = $'\frac{15}{BPM}'$
+    Seconds per 16th note = 15 / BPM
 The value we get from this formula will indicate how many rows we would need to skip by, since each row of the csv file indicates a hundredth of a second. 
 
 <img src="https://user-images.githubusercontent.com/36008213/111897628-4cd98180-89de-11eb-8714-703c6b35788e.png" width="70%" height="70%">\
@@ -33,7 +33,7 @@ One approach we tried was to send the values of the csv file into multiple Rando
 <img src="https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/train_Y.PNG">\
 (Example of the personally generated excel sheet)
 
-<img src="https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/xml_file.PNG">\
+<img src="https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/xml_file.PNG" width="50%" height="50%">\
 (Sample of the xml file)
 
 ### Neural Networks

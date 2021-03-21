@@ -20,9 +20,11 @@ To generate data for this project, we sent in an audio file into AnthemScore, wh
     Seconds per 16th note = 15 / BPM 
 The value we get from this formula will indicate how many rows we would need to skip by, since each row of the csv file indicates a hundredth of a second. 
 
-![1](https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/Figure_1.png)
+<img src="https://user-images.githubusercontent.com/36008213/111897628-4cd98180-89de-11eb-8714-703c6b35788e.png" width="70%" height="70%">
 
 One of the first tasks that we had to accomplish was to be able to detect when each note of a song was being played. The first way that was attempted to do this was by looking at the xml representation of the song produced by anthem score. The approach that was taken when analyzing the csv file representation of the song from Anthemscore was to extract the maximum amplitude that was recorded at each millisecond of the audio file. This data could then be visualized as a graph of amplitude over time. In this approach, the local maxima in the graph would be the time that a note was played, and the frequency corresponding to the column in the csv file would be the frequency of the note that was played. This approach in identifying specific notes of a song produced an audio representation that was unrecognizable as the original song, so we had to take a different approach using the xml file.
+
+![1](https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/Figure_1.png)
 
 ### Random Forest Classifier
 One approach we tried was to send the values of the csv file into multiple Random Forest Classifiers to train the classifier on when an instrument is being played. To do this, we first generated test audio data from a Digital Audio Workstation (DAW) called Ableton. Then, we send it to AnthemScore to generate the csv file, and parse it as mentioned before. Then we created an excel sheet that indicates when each instrument was being played on 16th note intervals for all of the samples. Then we use this data with the data from the csv file to train a Random Forest Classifier for each instrument sound that is in Minecraft. Lastly, we passed in the test audio file, which was the song “Seven Nation Army” from the band The White Stripes, into AnthemScore to get our “x” values to predict from.

@@ -18,13 +18,15 @@ Our project is essentially split into two parts, both of which are certainly not
 ### Note Type and Timing
 One of the first tasks that we had to accomplish was to be able to detect when each note of a song was being played. The first way that was attempted to do this was by looking at the xml representation of the song produced by anthem score. The approach that was taken when analyzing the csv file representation of the song from Anthemscore was to extract the maximum amplitude that was recorded at each millisecond of the audio file. This data could then be visualized as a graph of amplitude over time. In this approach, the local maxima in the graph would be the time that a note was played, and the frequency corresponding to the column in the csv file would be the frequency of the note that was played. This approach in identifying specific notes of a song produced an audio representation that was unrecognizable as the original song, so we had to take a different approach using the xml file.
 
-![1](https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/Figure_1.png)
+![1](https://raw.githubusercontent.com/rhorikaw/LilSteve/main/docs/Figure_1.png)\
+(Amplitude Graph)
 
 To generate data for this project, we sent in an audio file into AnthemScore, which is a software that uses neural networks to generate spectrograms, sheet music, and other interesting types of data. We mainly focused on the spectrograms and the xml files in our project to give us a better understanding of what kind of sounds are occurring at what point in the audio file. After retrieving the spectrogram data, we parsed the data so that we only have data for the intervals we are interested in. We did this by using a simple formula:
     Seconds per 16th note = 15 / BPM 
 The value we get from this formula will indicate how many rows we would need to skip by, since each row of the csv file indicates a hundredth of a second. 
 
-<img src="https://user-images.githubusercontent.com/36008213/111897628-4cd98180-89de-11eb-8714-703c6b35788e.png" width="70%" height="70%">
+<img src="https://user-images.githubusercontent.com/36008213/111897628-4cd98180-89de-11eb-8714-703c6b35788e.png" width="70%" height="70%">\
+(AnthemScore Representation of Notes)
 
 ### Random Forest Classifier
 One approach we tried was to send the values of the csv file into multiple Random Forest Classifiers to train the classifier on when an instrument is being played. To do this, we first generated test audio data from a Digital Audio Workstation (DAW) called Ableton. Then, we send it to AnthemScore to generate the csv file, and parse it as mentioned before. Then we created an excel sheet that indicates when each instrument was being played on 16th note intervals for all of the samples. Then we use this data with the data from the csv file to train a Random Forest Classifier for each instrument sound that is in Minecraft. Lastly, we passed in the test audio file, which was the song “Seven Nation Army” from the band The White Stripes, into AnthemScore to get our “x” values to predict from.
@@ -45,8 +47,10 @@ The derivative of this equation is fed into the backpropagation algorithm during
 <img src="https://render.githubusercontent.com/render/math?math={f'(x) = 1%20|%20x >= 0}">\
 <img src="https://render.githubusercontent.com/render/math?math={f'(x) = \alpha e^x%20|%20x < 0}">\
 \
-After training, we pass the user’s input song into our model, and we get the split instrument files as our output which we can then pass to AnthemScore as described above.
-
+After training, we pass the user’s input song into our model, and we get the split instrument files as our output which we can then pass to AnthemScore as described above.\
+\
+<img src="https://user-images.githubusercontent.com/36008213/111915699-cdc36800-8a34-11eb-82a0-c017e23fee53.png" width="70%" height="70%">\
+(Activation Function and Derivative)
 
 ### Advantages and Disadvantages
 

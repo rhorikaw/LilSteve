@@ -80,3 +80,6 @@ https://www.lunaverus.com/
 
 https://www.ableton.com/
 
+https://sefiks.com/2018/01/02/elu-as-a-neural-networks-activation-function/
+
+https://github.com/deezer/spleeter

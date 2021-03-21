@@ -406,20 +406,23 @@ hihat_data.close()
 dfT = pd.read_excel("sna_Y.xlsx")
 piano_YT = dfT.Piano.to_numpy()
 bass_YT = dfT.Bass.to_numpy()
-#kick_YT = dfT.Kick.to_numpy()
-#snare_YT = dfT.Snare.to_numpy()
-#hat_YT = dfT.Hat.to_numpy()
+kick_YT = dfT.Kick.to_numpy()
+snare_YT = dfT.Snare.to_numpy()
+hat_YT = dfT.Hat.to_numpy()
 
 piano_acc = 1 - sum(np.absolute(test_piano_Y-piano_YT))/len(piano_YT)
 bass_acc = 1 - sum(np.absolute(test_bass_Y-bass_YT))/len(bass_YT)
-#kick_acc = 1 - sum(np.absolute(test_kick_Y-kick_YT))/len(kick_YT) 
-#snare_acc = 1 - sum(np.absolute(test_snare_Y-snare_YT))/len(snare_YT) 
-#hat_acc = 1 - sum(np.absolute(test_hat_Y-hat_YT))/len(hat_YT)
-overall_acc = np.average([piano_acc, bass_acc])
+kick_acc = 1 - sum(np.absolute(test_kick_Y-kick_YT))/len(kick_YT) 
+snare_acc = 1 - sum(np.absolute(test_snare_Y-snare_YT))/len(snare_YT) 
+hat_acc = 1 - sum(np.absolute(test_hat_Y-hat_YT))/len(hat_YT)
+overall_acc = np.average([piano_acc, bass_acc, kick_acc, snare_acc, hat_acc])
 
-print("Note Accuracies:\n\tPiano: {p_a}% \n\tBass: {b_a}% \n\tOverall: {o_a}%".format( 
+print("Note Accuracies:\n\tPiano: {p_a}% \n\tBass: {b_a}% \n\tKick: {k_a}% \n\tSnare: {s_a}% \n\tHat: {h_a}% \n\n\tOverall: {o_a}%".format( 
     p_a = piano_acc*100,
     b_a = bass_acc*100, 
+    k_a = kick_acc*100, 
+    s_a = snare_acc*100, 
+    h_a = hat_acc*100,
     o_a = overall_acc*100))
 
 

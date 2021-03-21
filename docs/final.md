@@ -40,7 +40,8 @@ The reason this is called the Neural Network model is because we used Neural Net
 <img src="https://render.githubusercontent.com/render/math?math={f(x) = \alpha(e^x-1)%20|%20x < 0}">\
 The derivative of this equation is fed into the backpropagation algorithm during learning. This is:\
 <img src="https://render.githubusercontent.com/render/math?math={f'(x) = 1%20|%20x >= 0}">\
-<img src="https://render.githubusercontent.com/render/math?math={f'(x) = \alpha(e^x)%20|%20x < 0}">
+<img src="https://render.githubusercontent.com/render/math?math={f'(x) = \alpha(e^x)%20|%20x < 0}">\
+After training, we pass the user’s input song into our model, and we get the split instrument files as our output which we can then pass to AnthemScore as described above.
 
 
 ### Advantages and Disadvantages

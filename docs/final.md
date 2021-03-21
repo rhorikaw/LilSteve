@@ -36,11 +36,15 @@ The idea behind the Neural Network model was to split the song into the five ins
 (NN Model training)\
 \
 The reason this is called the Neural Network model is because we used Neural Networks to split the song into the five different instrument files. To do this, we first created twenty different songs using Ableton in order to allow the model to train. Each of the songs had six components: a snare, kick, hi-hat, bass, piano, and mix. The snare, kick, hi-hat, bass, and piano each had their own separate files for each of the twenty songs, and the mix contained all of the instruments together for each song. Then, to split the song up into separate tracks, we input the twenty sample songs into our Neural Network model with a learning rate of 0.0001 and a maximum number of training steps for each song of 1000. Then meant that with each song that was added, the amount of training that would be done scaled up considerably. We used ELU as our activation function, which has the equation :\
+\
 <img src="https://render.githubusercontent.com/render/math?math={f(x) = x%20|%20x >= 0}">\
 <img src="https://render.githubusercontent.com/render/math?math={f(x) = \alpha(e^x-1)%20|%20x < 0}">\
+\
 The derivative of this equation is fed into the backpropagation algorithm during learning. This is:\
+\
 <img src="https://render.githubusercontent.com/render/math?math={f'(x) = 1%20|%20x >= 0}">\
-<img src="https://render.githubusercontent.com/render/math?math={f'(x) = \alpha(e^x)%20|%20x < 0}">\
+<img src="https://render.githubusercontent.com/render/math?math={f'(x) = \alpha e^x%20|%20x < 0}">\
+\
 After training, we pass the user’s input song into our model, and we get the split instrument files as our output which we can then pass to AnthemScore as described above.
 
 

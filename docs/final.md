@@ -87,6 +87,7 @@ Upon listening to the Minecraft circuit that is output by the Neural Network mod
 
 ### Comparison
 #### Quantitative Analysis
+Compared to the Neural Network model, the Random Forest Classifier trains at a much faster rate, and this phenomenon is clear when looking at the two line graphs above. To achieve 91% accuracy, the Random Forest Classifier only needs four songs, compared to the 20 songs needed by the Neural Network Model to achieve a similar performance. On top of this, the time it takes the Random Forest Classifier to train on each song is considerably less than the time it takes for the Neural Network model. To put this into a quantitative perspective, it takes around one minute for the Random Forest Classifier to train on four songs, whereas it takes around eight hours for the Neural Network model to train on eight songs, which only gets to about 86.6% accuracy. In comparison to the Neural Network model, the Random Forest Classifier provides an incredible upgrade in both time and resources required to train and execute. 
 
 #### Qualitative Analysis
 

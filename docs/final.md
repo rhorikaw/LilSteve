@@ -58,7 +58,7 @@ After training, we pass the user’s input song into our model, and we get the s
 (Activation Function and Derivative)
 
 ### Advantages and Disadvantages
-
+Generally speaking, Random Forest Classifiers are more robust than Neural Networks, as they are less prone to overfitting and not as computationally expensive. Neural Networks also require a lot of training data and usually perform worse than Random Forest Classifiers. Thus, in our project, it is more advantageous to use the Random Forest Classifier over a Neural Network.
 
 ## Evaluation
 ### Random Forest Classifier

@@ -3,7 +3,7 @@ layout: default
 title: Final Report
 ---
 ## Final Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GlTjRBRDdUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>/
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GlTjRBRDdUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Summary of the Project
 From its in-game soundtrack to jukeboxes and noteblocks, Minecraft’s music is an iconic component of the game’s history. A quick YouTube search demonstrates the popularity of Minecraft’s music with the top videos garnering hundreds of millions of views. Minecraft noteblock circuit videos are no exception to this phenomenon as millions of viewers show up to listen to the Minecraft rendition of their favorite song. In addition to the actual songs, tutorials about creating noteblock circuits that replicate various songs are also immensely prevalent, illustrating the demand for this type of content. However, while detailing the steps that are necessary to create noteblock circuits, these videos also note that the creation process often takes many hours to even days in order to complete. Therefore the construction of a product that enables users to enjoy their favorite songs within the beauty of Minecraft’s music without the exorbitant time sink is one that is not only practical but also fills a massive demand.\
